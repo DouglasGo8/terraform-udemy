@@ -17,7 +17,8 @@ data "aws_subnet" "main-public-2" {
 }
 
 data "aws_security_group" "elb-nubank-app-sg" {
-  id = "sg-0a949f432ec654d70"
+  # ELB Security group (WARNING id bellow was removed)
+  id = "sg-0c01d63feec0bca0e"
 }
 
 data "aws_ecs_cluster" "nubank-app-cluster" {
