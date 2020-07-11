@@ -5,7 +5,7 @@
 
 # Commands
 sudo ssh-keygen -e -m RFC4716 -f {{PEMFILE}}.pem
-
+ssh ec2-user@{{PUBLIC_IP}}
 aws --profile default ecr get-authorization-token --region us-east-1
 
 edit .docker/config.json to
