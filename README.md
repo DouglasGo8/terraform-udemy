@@ -4,9 +4,9 @@
 [Stackoverflow] (https://stackoverflow.com/questions/38294628/docker-push-to-aws-ecr-fails-on-windows-no-basic-auth-credentials/38294629)
 
 # Commands
-sudo ssh-keygen -e -m RFC4716 -f {{PEMFILE}}.pem
-sudo chmod 600 /path/{{pem}}
-ssh -i {{pem}} ec2-user@{{PUBLIC_IP}}
+sudo ssh-keygen -e -m RFC4716 -f {{PEMFILE}}.pem <br />
+sudo chmod 600 /path/{{pem}} <br />
+ssh -i {{pem}} ec2-user@{{PUBLIC_IP}} <br />
 
 aws --profile default ecr get-authorization-token --region us-east-1
 
