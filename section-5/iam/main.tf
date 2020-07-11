@@ -48,3 +48,4 @@ resource "aws_iam_group_membership" "administratos-users" {
   group = "${aws_iam_group.administrators.name}"
 }
 
+
