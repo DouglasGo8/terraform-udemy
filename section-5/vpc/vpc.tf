@@ -3,7 +3,7 @@
 provider "aws" {
   region  = "${var.region}"
   profile = "${var.profile}"
-}
+} 
 
 
 # Internet VPC
@@ -14,7 +14,7 @@ resource "aws_vpc" "main-vpc" {
   enable_dns_hostnames = "true"
   enable_classiclink   = "false"
   tags = {
-    Name = "Main_VPC"
+    Name = "vpc-default"
   }
 
 }
